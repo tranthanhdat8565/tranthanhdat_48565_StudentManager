@@ -50,6 +50,11 @@ namespace StudentManager
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtName.Text))
+            {
+                MessageBox.Show("Tên sinh viên không được để trống.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; 
+            }
             Student s = new Student()
             {
                 Name = txtName.Text,
