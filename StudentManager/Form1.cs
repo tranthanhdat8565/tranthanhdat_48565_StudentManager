@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace StudentManager
 {
+    // COMMIT 2: Finalizing UI layout based on project requirements.
     public partial class Form1 : Form
     {
         // -----------------------
